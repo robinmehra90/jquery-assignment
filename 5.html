@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>Change the font size of ".target" which has parent element with id name "#main"
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+  <br><br><br><br>
+    <div id="main">
+        <span>Span Tag/Element.</span>
+        <p>Text in P element without id</p>
+        <p class="target">Text in The P element with id main.</p>
+        <span>Span after the P tag</span>
+    </div>
+
+    <script>
+        $(function() {
+            $("#main").children(".target").css("font-size", "23px");
+        });
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</form>
+</body>
+
+</html>

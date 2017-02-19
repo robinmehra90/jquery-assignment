@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>Bind a click function to an "click" element and append next "click" next to it.
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <br><br><br><br>
+    <p>Default</p>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</body>
+<script>
+    $(document).ready(function() {
+        $('p').on('click', function() {
+            $('p').append(" click");
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>Change the color of element which class name end with "-new"
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+  <br><br><br><br>
+    <p>P element with No id and Class</p>
+    <p class="pclass">P element with class name "Pclass" </p>
+    <p class="p-new">P Element with class name "p-new" </p>
+    <script>
+        $(document).ready(function() {
+            $("[class$=-new]").css("color", "red");
+        });
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</body>
+
+</html>

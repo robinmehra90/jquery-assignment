@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>Retrive the data from server using ajax get call
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button>This button is used to call ajax to retrieve data</button>
+    <div>
+        <p>
+
+        </p>
+        <h3>
+
+        </h3>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $.get("data.txt", function(data, status) {
+                    $('p').append("Data: " + data);
+                    $('h3').append("Status: " + status);
+                });
+            });
+        });
+    </script>
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</body>
+
+</html>

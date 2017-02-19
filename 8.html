@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>Click event not working on element which added dynamicly or via script, make it work using .on method
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <script>
+        var el = $("<p></p>");
+        $(document).ready(function() {
+            $(el.text("P element injected from Script"));
+            $("body").append(el);
+            $(el.on("click", function() {
+                alert(" event has been generated");
+            }));
+        });
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+
+</body>
+
+</html>

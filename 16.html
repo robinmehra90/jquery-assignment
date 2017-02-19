@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <table id="tblData">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Robin</td>
+                <td>9582247568</td>
+                <td>Robin@gmail.com</td>
+                <td><button class='btnDelete'>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Yatindra</td>
+                <td>9854755577</td>
+                <td>Yatindra@gmail.com</td>
+                <td><button class='btnDelete'>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Raj</td>
+                <td>9557527275</td>
+                <td>raj@hotmail.com</td>
+                <td><button class='btnDelete'>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $('.btnDelete').on("click", function(e) {
+                $(this).parent().parent().remove();
+            })
+
+        })
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</body>
+
+</html>

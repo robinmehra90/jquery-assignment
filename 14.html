@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>Change color of every cell which has numberl larger than 10.
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+<br><br><br><br>
+    <table id="numbers" style="border:1px solid;border-radius:5px;">
+        <tr>
+            <th>Number</th>
+            <th>Number</th>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>34</td>
+        </tr>
+
+        <tr>
+            <td>27</td>
+            <td>14</td>
+        </tr>
+
+    </table>
+    <script>
+        $("#numbers td").each(function() {
+            if (parseInt($(this).text()) > 10) {
+                $(this).css("background-color", "grey");
+            }
+        });
+    </script>
+    <br><br><br><br>
+    <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="BACK" onclick="window.location.href='index.html'" />
+</body>
+
+</html>
